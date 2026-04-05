@@ -86288,29 +86288,30 @@ $0(){var s=this.a.f.$1(this.b)
 return s},
 $S:0}
 A.th.prototype={
-J(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e="scheduleDatetime",d={},c=t.S,b=A.b7(24,0,!1,c),a=A.b7(24,0,!1,c),a0=A.b7(24,0,!1,c)
-for(c=f.c,o=c.length,n=0;n<c.length;c.length===o||(0,A.x)(c),++n){s=c[n]
-if(J.bJ(s,e)!=null&&J.YR(J.c5(J.bJ(s,e)),10))try{r=J.bJ(s,e)
+J(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d="scheduleDatetime",c={},b=t.S,a=A.b7(24,0,!1,b),a0=A.b7(24,0,!1,b),a1=A.b7(24,0,!1,b)
+for(b=e.c,o=b.length,n=0;n<b.length;b.length===o||(0,A.x)(b),++n){s=b[n]
+if(J.bJ(s,d)!=null&&J.YR(J.c5(J.bJ(s,d)),10))try{r=J.bJ(s,d)
 q=J.kn(r,8,10)
 m=A.dx(q,null)
 p=m==null?-1:m
-if(p>=0&&p<24){if(J.d(J.bJ(s,"ad"),"depart")){l=b
+if(p>=0&&p<24){if(J.d(J.bJ(s,"ad"),"depart")){l=a
 k=p
 j=J.br(l)
-j.m(l,k,j.h(l,k)+1)}else if(J.d(J.bJ(s,"ad"),"arrive")){l=a
+j.m(l,k,j.h(l,k)+1)}else if(J.d(J.bJ(s,"ad"),"arrive")){l=a0
 k=p
 j=J.br(l)
-j.m(l,k,j.h(l,k)+1)}l=a0
+j.m(l,k,j.h(l,k)+1)}l=a1
 k=p
 j=J.br(l)
-j.m(l,k,j.h(l,k)+1)}}catch(i){}}d.a=0
-for(c=a0,o=c.length,l=f.Q,n=0,k=0;n<o;++n){h=c[n]/l
-if(h>k){d.a=h
-k=h}}g=d.a=k*1.2
-c=f.as
-if(c!=null){if(g<c)d.a=c}else{c=g<10?d.a=10:g
-o=f.d
-if((o===0||o===1)&&c<70)d.a=70}return new A.kZ(new A.a5f(d,f,b,a,a0),null)}}
+j.m(l,k,j.h(l,k)+1)}}catch(i){}}for(b=a1,o=b.length,l=e.Q,h=0,n=0;n<o;++n){g=b[n]/l
+if(g>h)h=g}c.a=null
+b=e.as
+if(b!=null)if(h<=b)c.a=b
+else c.a=h*1.1+1
+else{f=c.a=h*1.2
+b=f<10?c.a=10:f
+o=e.d
+if((o===0||o===1)&&b<70)c.a=70}return new A.kZ(new A.a5f(c,e,a,a0,a1),null)}}
 A.a5f.prototype={
 $2(a,b){var s=this,r=null,q=s.b
 return A.eW(B.b2,A.b([A.hg(r,A.fI(r,r,r,new A.S_(s.c,s.d,s.e,s.a.a,q.z,q.Q,r),new A.z(b.b,b.d)),B.a9,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a5e(q,b),r,r,r),A.n0(r,new A.wK(q.f,q.r,q.w,q.x,q.y,r),r,r,50,r,10,r)],t.p),B.K,B.aT)},
@@ -87501,7 +87502,7 @@ break
 default:s="\uc804\uccb4"}r=g.w
 if(r)q=g.x===1
 else q=!0
-if(q)p=d===3?85:45
+if(q)p=d===3?85:50
 else if(r&&g.x===0)if(d!==3)p=650
 else{o=A.b7(24,0,!1,t.S)
 for(d=g.gwl(),r=d.length,n=0;n<d.length;d.length===r||(0,A.x)(d),++n){m=d[n].h(0,"scheduleDatetime")
